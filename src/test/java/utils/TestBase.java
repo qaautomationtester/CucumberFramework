@@ -24,9 +24,9 @@ public class TestBase {
 		{
 			if(properties.getProperty("browser").equalsIgnoreCase("chrome")) {
 				
-				ChromeOptions options = new ChromeOptions();
+				// ChromeOptions options = new ChromeOptions();
 //				options.addArguments("--headless");
-				driver = new ChromeDriver(options);
+				driver = new ChromeDriver();
 			}
 //			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			driver.get(url);
